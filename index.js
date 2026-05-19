@@ -202,7 +202,9 @@ app.post('/editar_marca', (req, res) => {
 
 
 //******** Ejecución del servidor */
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
 
     console.log('El servidor se ejecutó con exito')
 
